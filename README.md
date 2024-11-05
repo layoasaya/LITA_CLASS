@@ -115,17 +115,111 @@ Insights Generated: Present findings with explanations, such as key trends, patt
 ---
 
 ### 7. Practicals and Codes Used
+  Here are some code snippet used during our training;
+```Excel Code Snippets
+Data Cleaning with Excel Formulas
 
+This snippet demonstrates how to clean a dataset by removing duplicates and filling in missing values.
+excel
+Copy code
+' Remove duplicates from a range
+Sub RemoveDuplicates()
+    Dim rng As Range
+    Set rng = ThisWorkbook.Sheets("Sheet1").Range("A1:C100")
+    rng.RemoveDuplicates Columns:=1, Header:=xlYes
+End Sub
+
+' Fill down missing values in Column A
+Sub FillDownMissingValues()
+    Dim lastRow As Long
+    lastRow = ThisWorkbook.Sheets("Sheet1").Cells(Rows.Count, 1).End(xlUp).Row
+    ThisWorkbook.Sheets("Sheet1").Range("A2:A" & lastRow).SpecialCells(xlCellTypeBlanks).FormulaR1C1 = "=R[-1]C"
+End Sub
+Creating Pivot Table
+
+This snippet creates a pivot table from a dataset.
+excel
+Copy code
+Sub CreatePivotTable()
+    Dim ws As Worksheet
+    Dim ptCache As PivotCache
+    Dim pt As PivotTable
+    Dim dataRange As Range
+    Set ws = ThisWorkbook.Sheets("Data")
+    Set dataRange = ws.Range("A1:D100") ' Adjust the range as necessary
+    
+    Set ptCache = ThisWorkbook.PivotCaches.Create(SourceType:=xlDatabase, SourceData:=dataRange)
+    Set pt = ptCache.CreatePivotTable(TableDestination:=ThisWorkbook.Sheets("PivotTable").Range("A1"))
+    
+    With pt
+        .PivotFields("Category").Orientation = xlRowField
+        .PivotFields("Sales").Orientation = xlDataField
+        .PivotFields("Date").Orientation = xlColumnField
+    End With
+End Sub
+SQL Code Snippets
+Selecting and Filtering Data
+
+This SQL query retrieves specific columns from a table and filters the results.
+sql
+Copy code
+SELECT ProductID, ProductName, Price
+FROM Products
+WHERE Price > 20 AND StockQuantity > 0
+ORDER BY Price DESC;
+Creating a New Table and Inserting Data
+
+This snippet demonstrates how to create a new table and insert records into it.
+sql
+Copy code
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    TotalAmount DECIMAL(10, 2)
+);
+
+INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount)
+VALUES (1, 101, '2024-11-01', 150.75),
+       (2, 102, '2024-11-02', 245.50),
+       (3, 103, '2024-11-03', 99.99);
+Using JOIN to Combine Data
+
+This snippet demonstrates how to join two tables to get related data.
+sql
+Copy code
+SELECT o.OrderID, c.CustomerName, o.TotalAmount
+FROM Orders o
+INNER JOIN Customers c ON o.CustomerID = c.CustomerID
+WHERE o.OrderDate >= '2024-11-01';
+Power BI Code Snippets (DAX)
+Creating a Calculated Column
+
+This DAX formula creates a new column in a table to calculate the total sales.
+dax
+Copy code
+TotalSales = Sales[Quantity] * Sales[Price]
+Creating a Measure for Total Revenue
+
+This DAX measure calculates total revenue, which can be used in visualizations.
+dax
+Copy code
+TotalRevenue = SUM(Sales[TotalSales])
+Filtering Data in a Measure
+
+This measure calculates total revenue for a specific product category.
+dax
+Copy code
+RevenueForCategory = 
+CALCULATE(
+    SUM(Sales[TotalSales]),
+    Products[Category] = "Electronics"
+)
 ---
+
 ### 8. Conclusion and Future Work
 
-This section wraps up the project by summarizing achievements and discussing potential areas for future exploration:
-
-Summary: Recap the overall analysis and skills demonstrated.
-
-Future Improvements: Mention potential areas for refining your approach, such as adding new data sources or exploring advanced analytical tools.
-
-Career Relevance: Briefly reflect on how this project has prepared you for roles in data analysis, providing specific examples of skills gained.
+This project provided a comprehensive analysis of key data using various analytical tools such as Microsoft Excel, SQL, and Power BI. Throughout the process, I demonstrated proficiency in data cleaning, data visualization, and creating meaningful insights from complex datasets. Key tasks included designing pivot tables in Excel to summarize data trends, writing SQL queries for efficient data extraction and manipulation, and utilizing DAX formulas in Power BI to create measures and calculated columns that facilitated deeper analysis. The project culminated in the presentation of actionable insights, showing my ability to transform raw data into clear, decision-driving visualizations and reports.
 
 
 
