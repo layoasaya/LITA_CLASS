@@ -13,6 +13,6 @@ This data analysis project represents the culmination of a 3-month intensive cou
 4. Learning Outcomes and Skills
 5. Tests and Assignments
 6. Detailed Analysis
-Data Collection and Preprocessing
-Data Cleaning and Transformation
-Data Visualization and Insights
+- Data Collection and Preprocessing
+- Data Cleaning and Transformation
+- Data Visualization and Insights
