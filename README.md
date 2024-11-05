@@ -46,14 +46,16 @@ Class Hours: 2 hours per session
 
 The tools learned and applied in this course are essential for data analysts in industry:
 
-1. Microsoft Excel DOWNLOAD HERE -[
+1. Microsoft Excel [DOWNLOAD HERE](https://www.microsoft.com).
   - For data cleaning, exploratory data analysis, and basic visualizations.
 
 
-3. SQL Server SSMS - For data management, querying, and database operations.
+2. SQL Server SSMS [DOWNLOAD HERE](https://www.microsoft.com/en-us/sql-server/sql-server-downloads?msockid=0bc67129e9ea6da0170a6561e8b66c4d).
+ - For data management, querying, and database operations.
 
 
-4. Power BI - For creating professional dashboards and data visualizations to support decision-making.
+3. Power BI [DOWNLOAD HERE](https://apps.microsoft.com/detail/9ntxr16hnw1t?launch=true&mode=full&hl=en-us&gl=ng&ocid=bingwebsearch).
+ - For creating professional dashboards and data visualizations to support decision-making.
  
 
 
@@ -61,67 +63,49 @@ The tools learned and applied in this course are essential for data analysts in 
 
 The project emphasizes the following skills:
 
-Data Cleaning and Transformation: Proficiency in data wrangling and transforming raw data for analysis.
-
-Data Querying: Skilled in writing SQL queries to retrieve, filter, and manipulate data for various purposes.
-
-Data Visualization: Ability to create informative, interactive visualizations and dashboards in Power BI.
-
-Analytical Thinking: Applying logical approaches to solve data-related challenges and interpret trends.
+1. Data Cleaning and Transformation: Proficiency in data wrangling and transforming raw data for analysis.
+2. Data Querying: Skilled in writing SQL queries to retrieve, filter, and manipulate data for various purposes.
+3. Data Visualization: Ability to create informative, interactive visualizations and dashboards in Power BI.
+4. Analytical Thinking: Applying logical approaches to solve data-related challenges and interpret trends.
 
 
 ### 5. Tests and Assignments
 
 Each course segment concluded with practical assessments hosted on our LMS (Canvas) to test comprehension and application skills. Here’s a summary:
 
-1. Excel Module:
-
-Test: Focused on data wrangling, pivot tables, conditional formatting, and creating basic charts.
-
-Assignments: Involved cleaning datasets, using formulas, and performing basic statistical analysis.
+A. Excel Module:
+ Test: Focused on data wrangling, pivot tables, conditional formatting, and creating basic charts.
+ Assignments: Involved cleaning datasets, using formulas, and performing basic statistical analysis.
 
 
-
-2. SQL Module:
-
-Test: Examined querying skills, including joins, aggregations, and subqueries.
-
-Assignments: Involved working with a relational database to extract meaningful information from structured datasets.
+B. SQL Module:
+ Test: Examined querying skills, including joins, aggregations, and subqueries.
+ Assignments: Involved working with a relational database to extract meaningful information from structured datasets.
 
 
-
-3. Power BI Module:
-
-Test: Assessed the ability to create dashboards and interpret data visualizations.
-
-Assignments: Required building a dashboard with multiple charts and providing insights based on visualization.
-
-
+C. Power BI Module:
+ Test: Assessed the ability to create dashboards and interpret data visualizations.
+ Assignments: Required building a dashboard with multiple charts and providing insights based on visualization.
 
 
 
 ---
 
 ### 6. Detailed Analysis
-
 This section includes a step-by-step breakdown of the data analysis workflow followed during the course, complete with examples and visuals.
-
-A. Data Collection and Preprocessing
-
+- Data Collection and Preprocessing
 Data Sources: Outline the types of data used (e.g., sample business datasets, customer data, etc.).
 
 Data Import and Storage: Show how data was imported using Excel and SQL Server SSMS. Discuss methods for handling different data types and formats.
 
 
-B. Data Cleaning and Transformation
-
+- Data Cleaning and Transformation
 Steps Taken: Document the data cleaning process—e.g., removing duplicates, handling missing values, and formatting inconsistencies.
 
 Tools: Use screenshots or code snippets to demonstrate the cleaning and transformation steps in Excel and SQL.
 
 
-C. Data Visualization and Insights
-
+- Data Visualization and Insights
 Power BI Dashboards: Include screenshots and descriptions of each visualization (e.g., bar charts, line graphs, heat maps).
 
 Insights Generated: Present findings with explanations, such as key trends, patterns, or anomalies. Example: "Sales increased by 15% quarter-over-quarter, with a marked spike in Q2 due to promotional campaigns."
@@ -130,7 +114,10 @@ Insights Generated: Present findings with explanations, such as key trends, patt
 
 ---
 
-### 7. Conclusion and Future Work
+### 7. Practicals and Codes Used
+
+---
+### 8. Conclusion and Future Work
 
 This section wraps up the project by summarizing achievements and discussing potential areas for future exploration:
 
