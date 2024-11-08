@@ -37,9 +37,9 @@ Solve real-world data analysis problems that are valuable for business decision-
 
 ### 2. Course Duration
 
-Duration: 3 Months
-Class Frequency: 3 times per week
-Class Hours: 2 hours per session
+Duration: 3 Months,
+Class Frequency: 3 times per week,
+Class Hours: 2 hours per session,
 
 
 ### 3. Tools Used
@@ -102,7 +102,7 @@ Data Import and Storage: Show how data was imported using Excel and SQL Server S
 - Data Cleaning and Transformation
 Steps Taken: Document the data cleaning process—e.g., removing duplicates, handling missing values, and formatting inconsistencies.
 
-Tools: Use screenshots or code snippets to demonstrate the cleaning and transformation steps in Excel and SQL.
+Tools: Use screenshots or code snippets to demonstrate the cleaning and transformation steps in Excel and SQL and power bi.
 
 
 - Data Visualization and Insights
@@ -236,7 +236,3 @@ Power BI Dashboards: Folder with Power BI files or screenshots.
 Final Notes
 
 This comprehensive setup, with well-organized sections, rich explanations, and visuals, will enhance readability and showcase your data analysis skills effectively.
-
-
-[Assignment.docx](https://github.com/user-attachments/files/17639599/Assignment.docx)
-
